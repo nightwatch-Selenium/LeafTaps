@@ -1,0 +1,26 @@
+{
+    "src_folders" : ["tests"],
+    "skip_testcases_on_fail" : false,
+    "output_folder" : "reports",
+  
+    "selenium" : {
+      "start_process" : true,
+      "server_path" : "lib/selenium-server/selenium-server-standalone-3.141.59.jar",
+      "log_path" : "",
+      "host" : "127.0.0.1",
+      "port" : 4444,
+      "cli_args" : {
+        "webdriver.chrome.driver" : "lib/chromedriver/chromedriver.exe"
+      }
+    },
+  
+    "test_settings" : {
+      "chrome" : {
+        "desiredCapabilities": {
+          "browserName": "chrome",
+          "javascriptEnabled": true,
+          "acceptSslCerts": true
+        }
+      }
+    }
+  }
